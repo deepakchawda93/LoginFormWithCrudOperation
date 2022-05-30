@@ -26,13 +26,8 @@ const Login = () => {
     setLogin({ ...login, [name]: value });
   };
   const submitLoign = (event) => {
-
-
-    
     const json = JSON.stringify(login);
     localStorage.setItem("data", json);
-    
-
   };
   return (
     <>

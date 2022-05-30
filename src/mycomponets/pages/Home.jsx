@@ -17,7 +17,7 @@ const Home = () => {
 
   async function loadUsers() {
     try {
-      const result = await axios.get("http://localhost:8000/users");
+      const result = await axios.get("http://localhost:3000/users");
       console.log("result ", result.data);
       dispatch(setloadUsers(result.data));
      
@@ -28,7 +28,7 @@ const Home = () => {
 
   const deleteUserData = async (id) => {
     if (window.confirm("Do You want to delete!")) {
-      await axios.delete(`http://localhost:8000/users/${id}`);
+      await axios.delete(`http://localhost:3000/users/${id}`);
       loadUsers();
     }
   };

@@ -15,13 +15,15 @@ import Login from "./mycomponets/pages/Login";
 import Footer from "./mycomponets/layout/Footer";
 import RegistrationForm from "./mycomponets/pages/RegistrationForm";
 
-function App() {
+function App() {  
   const localData = localStorage.getItem("data");
+  console.log("local data",localData)
   const [logout, setlogout] = useState(localData);
   return (
     <>
       {!logout ? (
         <>
+        
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/Registration" element={<RegistrationForm />} />
