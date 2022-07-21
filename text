@@ -1,0 +1,6 @@
+1. in this project i implement redux and redux concept 
+2. we want to run this project so you have to run first server 
+3. here i am using json server 
+4. we need to run this command "json-server --watch db.json --port 8000" in terminal 
+5. i also implement google log in funtionality header
+6. and html error validation too.

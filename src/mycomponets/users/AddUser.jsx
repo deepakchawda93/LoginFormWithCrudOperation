@@ -29,7 +29,7 @@ const AddUser = () => {
     ) {
       alert("plz fill all require fields");
     } else {
-     const updateData= await axios.post("http://localhost:8000/users", addUser);
+     const updateData= await axios.post("http://localhost:3000/users", addUser);
       
       toast.success('🦄 New data added!', {
         position: "bottom-right",
@@ -40,7 +40,7 @@ const AddUser = () => {
         draggable: true,
         progress: undefined,
         });
-      const result = await axios.get("http://localhost:8000/users");
+      const result = await axios.get("http://localhost:3000/users");
       dispatch(setloadUsers(result.data));
 
       setAddUser({
